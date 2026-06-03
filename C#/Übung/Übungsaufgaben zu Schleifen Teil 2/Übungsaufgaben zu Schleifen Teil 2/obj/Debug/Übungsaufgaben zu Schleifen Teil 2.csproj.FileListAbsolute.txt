@@ -1,0 +1,8 @@
+C:\Users\ptlan\projects\bs\C#\Übung\Übungsaufgaben zu Schleifen Teil 2\Übungsaufgaben zu Schleifen Teil 2\bin\Debug\Übungsaufgaben zu Schleifen Teil 2.exe.config
+C:\Users\ptlan\projects\bs\C#\Übung\Übungsaufgaben zu Schleifen Teil 2\Übungsaufgaben zu Schleifen Teil 2\bin\Debug\Übungsaufgaben zu Schleifen Teil 2.exe
+C:\Users\ptlan\projects\bs\C#\Übung\Übungsaufgaben zu Schleifen Teil 2\Übungsaufgaben zu Schleifen Teil 2\bin\Debug\Übungsaufgaben zu Schleifen Teil 2.pdb
+C:\Users\ptlan\projects\bs\C#\Übung\Übungsaufgaben zu Schleifen Teil 2\Übungsaufgaben zu Schleifen Teil 2\obj\Debug\Übungsaufgaben zu Schleifen Teil 2.csproj.AssemblyReference.cache
+C:\Users\ptlan\projects\bs\C#\Übung\Übungsaufgaben zu Schleifen Teil 2\Übungsaufgaben zu Schleifen Teil 2\obj\Debug\Übungsaufgaben zu Schleifen Teil 2.csproj.CoreCompileInputs.cache
+C:\Users\ptlan\projects\bs\C#\Übung\Übungsaufgaben zu Schleifen Teil 2\Übungsaufgaben zu Schleifen Teil 2\obj\Debug\Übungsaufgaben zu Schleifen Teil 2.exe
+C:\Users\ptlan\projects\bs\C#\Übung\Übungsaufgaben zu Schleifen Teil 2\Übungsaufgaben zu Schleifen Teil 2\obj\Debug\Übungsaufgaben zu Schleifen Teil 2.pdb
+C:\Users\ptlan\projects\bs\C#\Übung\Übungsaufgaben zu Schleifen Teil 2\Übungsaufgaben zu Schleifen Teil 2\obj\Debug\Übungsaufgaben zu Schleifen Teil 2.exe.config

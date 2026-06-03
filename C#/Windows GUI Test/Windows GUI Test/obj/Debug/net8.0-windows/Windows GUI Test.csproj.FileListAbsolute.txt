@@ -1,0 +1,17 @@
+C:\Users\ptlan\projects\bs\C#\Windows GUI Test\Windows GUI Test\bin\Debug\net8.0-windows\Windows GUI Test.exe
+C:\Users\ptlan\projects\bs\C#\Windows GUI Test\Windows GUI Test\bin\Debug\net8.0-windows\Windows GUI Test.deps.json
+C:\Users\ptlan\projects\bs\C#\Windows GUI Test\Windows GUI Test\bin\Debug\net8.0-windows\Windows GUI Test.runtimeconfig.json
+C:\Users\ptlan\projects\bs\C#\Windows GUI Test\Windows GUI Test\bin\Debug\net8.0-windows\Windows GUI Test.dll
+C:\Users\ptlan\projects\bs\C#\Windows GUI Test\Windows GUI Test\bin\Debug\net8.0-windows\Windows GUI Test.pdb
+C:\Users\ptlan\projects\bs\C#\Windows GUI Test\Windows GUI Test\obj\Debug\net8.0-windows\Windows_GUI_Test.Form1.resources
+C:\Users\ptlan\projects\bs\C#\Windows GUI Test\Windows GUI Test\obj\Debug\net8.0-windows\Windows GUI Test.csproj.GenerateResource.cache
+C:\Users\ptlan\projects\bs\C#\Windows GUI Test\Windows GUI Test\obj\Debug\net8.0-windows\Windows GUI Test.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ptlan\projects\bs\C#\Windows GUI Test\Windows GUI Test\obj\Debug\net8.0-windows\Windows GUI Test.AssemblyInfoInputs.cache
+C:\Users\ptlan\projects\bs\C#\Windows GUI Test\Windows GUI Test\obj\Debug\net8.0-windows\Windows GUI Test.AssemblyInfo.cs
+C:\Users\ptlan\projects\bs\C#\Windows GUI Test\Windows GUI Test\obj\Debug\net8.0-windows\Windows GUI Test.csproj.CoreCompileInputs.cache
+C:\Users\ptlan\projects\bs\C#\Windows GUI Test\Windows GUI Test\obj\Debug\net8.0-windows\Windows GUI Test.sourcelink.json
+C:\Users\ptlan\projects\bs\C#\Windows GUI Test\Windows GUI Test\obj\Debug\net8.0-windows\Windows GUI Test.dll
+C:\Users\ptlan\projects\bs\C#\Windows GUI Test\Windows GUI Test\obj\Debug\net8.0-windows\refint\Windows GUI Test.dll
+C:\Users\ptlan\projects\bs\C#\Windows GUI Test\Windows GUI Test\obj\Debug\net8.0-windows\Windows GUI Test.pdb
+C:\Users\ptlan\projects\bs\C#\Windows GUI Test\Windows GUI Test\obj\Debug\net8.0-windows\Windows GUI Test.genruntimeconfig.cache
+C:\Users\ptlan\projects\bs\C#\Windows GUI Test\Windows GUI Test\obj\Debug\net8.0-windows\ref\Windows GUI Test.dll

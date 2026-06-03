@@ -1,0 +1,8 @@
+C:\Users\ptlan\projects\bs\C#\OOPBSP 2\OOPBeispiele\OOPBeispiele\bin\Debug\OOPBeispiele.exe.config
+C:\Users\ptlan\projects\bs\C#\OOPBSP 2\OOPBeispiele\OOPBeispiele\bin\Debug\OOPBeispiele.exe
+C:\Users\ptlan\projects\bs\C#\OOPBSP 2\OOPBeispiele\OOPBeispiele\bin\Debug\OOPBeispiele.pdb
+C:\Users\ptlan\projects\bs\C#\OOPBSP 2\OOPBeispiele\OOPBeispiele\obj\Debug\OOPBeispiele.csproj.AssemblyReference.cache
+C:\Users\ptlan\projects\bs\C#\OOPBSP 2\OOPBeispiele\OOPBeispiele\obj\Debug\OOPBeispiele.csproj.CoreCompileInputs.cache
+C:\Users\ptlan\projects\bs\C#\OOPBSP 2\OOPBeispiele\OOPBeispiele\obj\Debug\OOPBeispiele.exe
+C:\Users\ptlan\projects\bs\C#\OOPBSP 2\OOPBeispiele\OOPBeispiele\obj\Debug\OOPBeispiele.pdb
+C:\Users\ptlan\projects\bs\C#\OOPBSP 2\OOPBeispiele\OOPBeispiele\obj\Debug\OOPBeispiele.exe.config

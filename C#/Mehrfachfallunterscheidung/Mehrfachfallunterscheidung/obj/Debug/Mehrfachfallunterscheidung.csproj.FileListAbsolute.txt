@@ -1,0 +1,8 @@
+C:\Users\ptlan\projects\bs\C#\Mehrfachfallunterscheidung\Mehrfachfallunterscheidung\obj\Debug\Mehrfachfallunterscheidung.csproj.AssemblyReference.cache
+C:\Users\ptlan\projects\bs\C#\Mehrfachfallunterscheidung\Mehrfachfallunterscheidung\obj\Debug\Mehrfachfallunterscheidung.csproj.CoreCompileInputs.cache
+C:\Users\ptlan\projects\bs\C#\Mehrfachfallunterscheidung\Mehrfachfallunterscheidung\bin\Debug\Mehrfachfallunterscheidung.exe.config
+C:\Users\ptlan\projects\bs\C#\Mehrfachfallunterscheidung\Mehrfachfallunterscheidung\bin\Debug\Mehrfachfallunterscheidung.exe
+C:\Users\ptlan\projects\bs\C#\Mehrfachfallunterscheidung\Mehrfachfallunterscheidung\bin\Debug\Mehrfachfallunterscheidung.pdb
+C:\Users\ptlan\projects\bs\C#\Mehrfachfallunterscheidung\Mehrfachfallunterscheidung\obj\Debug\Mehrfachfallunterscheidung.exe
+C:\Users\ptlan\projects\bs\C#\Mehrfachfallunterscheidung\Mehrfachfallunterscheidung\obj\Debug\Mehrfachfallunterscheidung.pdb
+C:\Users\ptlan\projects\bs\C#\Mehrfachfallunterscheidung\Mehrfachfallunterscheidung\obj\Debug\Mehrfachfallunterscheidung.exe.config

@@ -1,0 +1,7 @@
+C:\Users\ptlan\projects\bs\C#\Übung\Schleifen\Schleifen\bin\Debug\Schleifen.exe.config
+C:\Users\ptlan\projects\bs\C#\Übung\Schleifen\Schleifen\bin\Debug\Schleifen.exe
+C:\Users\ptlan\projects\bs\C#\Übung\Schleifen\Schleifen\bin\Debug\Schleifen.pdb
+C:\Users\ptlan\projects\bs\C#\Übung\Schleifen\Schleifen\obj\Debug\Schleifen.csproj.AssemblyReference.cache
+C:\Users\ptlan\projects\bs\C#\Übung\Schleifen\Schleifen\obj\Debug\Schleifen.csproj.CoreCompileInputs.cache
+C:\Users\ptlan\projects\bs\C#\Übung\Schleifen\Schleifen\obj\Debug\Schleifen.exe
+C:\Users\ptlan\projects\bs\C#\Übung\Schleifen\Schleifen\obj\Debug\Schleifen.pdb

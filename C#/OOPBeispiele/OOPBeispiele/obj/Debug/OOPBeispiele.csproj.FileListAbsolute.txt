@@ -1,0 +1,16 @@
+C:\Users\ptlan\projects\bs\C#\OOPBeispiele\OOPBeispiele\bin\Debug\OOPBeispiele.exe.config
+C:\Users\ptlan\projects\bs\C#\OOPBeispiele\OOPBeispiele\bin\Debug\OOPBeispiele.exe
+C:\Users\ptlan\projects\bs\C#\OOPBeispiele\OOPBeispiele\bin\Debug\OOPBeispiele.pdb
+C:\Users\ptlan\projects\bs\C#\OOPBeispiele\OOPBeispiele\obj\Debug\OOPBeispiele.csproj.AssemblyReference.cache
+C:\Users\ptlan\projects\bs\C#\OOPBeispiele\OOPBeispiele\obj\Debug\OOPBeispiele.csproj.CoreCompileInputs.cache
+C:\Users\ptlan\projects\bs\C#\OOPBeispiele\OOPBeispiele\obj\Debug\OOPBeispiele.exe
+C:\Users\ptlan\projects\bs\C#\OOPBeispiele\OOPBeispiele\obj\Debug\OOPBeispiele.pdb
+C:\Users\ptlan\projects\bs\C#\OOPBeispiele\OOPBeispiele\obj\Debug\OOPBeispiele.exe.config
+C:\Users\tlang\projects\bs\C#\OOPBeispiele\OOPBeispiele\bin\Debug\OOPBeispiele.exe.config
+C:\Users\tlang\projects\bs\C#\OOPBeispiele\OOPBeispiele\bin\Debug\OOPBeispiele.exe
+C:\Users\tlang\projects\bs\C#\OOPBeispiele\OOPBeispiele\bin\Debug\OOPBeispiele.pdb
+C:\Users\tlang\projects\bs\C#\OOPBeispiele\OOPBeispiele\obj\Debug\OOPBeispiele.csproj.AssemblyReference.cache
+C:\Users\tlang\projects\bs\C#\OOPBeispiele\OOPBeispiele\obj\Debug\OOPBeispiele.exe.config
+C:\Users\tlang\projects\bs\C#\OOPBeispiele\OOPBeispiele\obj\Debug\OOPBeispiele.csproj.CoreCompileInputs.cache
+C:\Users\tlang\projects\bs\C#\OOPBeispiele\OOPBeispiele\obj\Debug\OOPBeispiele.exe
+C:\Users\tlang\projects\bs\C#\OOPBeispiele\OOPBeispiele\obj\Debug\OOPBeispiele.pdb

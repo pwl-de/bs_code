@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ptlan\\projects\\bs\\C#\\LottoZiehung\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E9805984-D90B-4EE5-83D7-4792E51B88C7}|LottoZiehung\\LottoZiehung.csproj|c:\\users\\ptlan\\projects\\bs\\c#\\lottoziehung\\lottoziehung\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9805984-D90B-4EE5-83D7-4792E51B88C7}|LottoZiehung\\LottoZiehung.csproj|solutionrelative:lottoziehung\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ptlan\\projects\\bs\\C#\\LottoZiehung\\LottoZiehung\\Program.cs",
+              "RelativeDocumentMoniker": "LottoZiehung\\Program.cs",
+              "ToolTip": "C:\\Users\\ptlan\\projects\\bs\\C#\\LottoZiehung\\LottoZiehung\\Program.cs",
+              "RelativeToolTip": "LottoZiehung\\Program.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwB0AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-03T16:49:41.107Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

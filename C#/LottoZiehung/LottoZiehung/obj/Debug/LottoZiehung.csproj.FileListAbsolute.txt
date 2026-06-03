@@ -1,0 +1,16 @@
+C:\Users\tlang\projects\bs\C#\LottoZiehung\LottoZiehung\bin\Debug\LottoZiehung.exe.config
+C:\Users\tlang\projects\bs\C#\LottoZiehung\LottoZiehung\bin\Debug\LottoZiehung.exe
+C:\Users\tlang\projects\bs\C#\LottoZiehung\LottoZiehung\bin\Debug\LottoZiehung.pdb
+C:\Users\tlang\projects\bs\C#\LottoZiehung\LottoZiehung\obj\Debug\LottoZiehung.csproj.AssemblyReference.cache
+C:\Users\tlang\projects\bs\C#\LottoZiehung\LottoZiehung\obj\Debug\LottoZiehung.csproj.CoreCompileInputs.cache
+C:\Users\tlang\projects\bs\C#\LottoZiehung\LottoZiehung\obj\Debug\LottoZiehung.exe
+C:\Users\tlang\projects\bs\C#\LottoZiehung\LottoZiehung\obj\Debug\LottoZiehung.pdb
+C:\Users\tlang\projects\bs\C#\LottoZiehung\LottoZiehung\obj\Debug\LottoZiehung.exe.config
+C:\Users\ptlan\projects\bs\C#\LottoZiehung\LottoZiehung\bin\Debug\LottoZiehung.exe.config
+C:\Users\ptlan\projects\bs\C#\LottoZiehung\LottoZiehung\bin\Debug\LottoZiehung.exe
+C:\Users\ptlan\projects\bs\C#\LottoZiehung\LottoZiehung\bin\Debug\LottoZiehung.pdb
+C:\Users\ptlan\projects\bs\C#\LottoZiehung\LottoZiehung\obj\Debug\LottoZiehung.csproj.AssemblyReference.cache
+C:\Users\ptlan\projects\bs\C#\LottoZiehung\LottoZiehung\obj\Debug\LottoZiehung.exe.config
+C:\Users\ptlan\projects\bs\C#\LottoZiehung\LottoZiehung\obj\Debug\LottoZiehung.csproj.CoreCompileInputs.cache
+C:\Users\ptlan\projects\bs\C#\LottoZiehung\LottoZiehung\obj\Debug\LottoZiehung.exe
+C:\Users\ptlan\projects\bs\C#\LottoZiehung\LottoZiehung\obj\Debug\LottoZiehung.pdb

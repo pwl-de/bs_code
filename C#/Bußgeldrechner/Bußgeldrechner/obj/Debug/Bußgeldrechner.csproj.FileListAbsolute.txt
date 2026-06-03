@@ -1,0 +1,8 @@
+C:\Users\ptlan\projects\bs\C#\Bußgeldrechner\Bußgeldrechner\bin\Debug\Bußgeldrechner.exe.config
+C:\Users\ptlan\projects\bs\C#\Bußgeldrechner\Bußgeldrechner\bin\Debug\Bußgeldrechner.exe
+C:\Users\ptlan\projects\bs\C#\Bußgeldrechner\Bußgeldrechner\bin\Debug\Bußgeldrechner.pdb
+C:\Users\ptlan\projects\bs\C#\Bußgeldrechner\Bußgeldrechner\obj\Debug\Bußgeldrechner.csproj.AssemblyReference.cache
+C:\Users\ptlan\projects\bs\C#\Bußgeldrechner\Bußgeldrechner\obj\Debug\Bußgeldrechner.csproj.CoreCompileInputs.cache
+C:\Users\ptlan\projects\bs\C#\Bußgeldrechner\Bußgeldrechner\obj\Debug\Bußgeldrechner.exe
+C:\Users\ptlan\projects\bs\C#\Bußgeldrechner\Bußgeldrechner\obj\Debug\Bußgeldrechner.pdb
+C:\Users\ptlan\projects\bs\C#\Bußgeldrechner\Bußgeldrechner\obj\Debug\Bußgeldrechner.exe.config

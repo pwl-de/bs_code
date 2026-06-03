@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ptlan\\projects\\bs\\C#\\OOPBSP 2\\OOPBeispiele\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0F885BCB-B7D1-41F8-BC46-47953F2B67A0}|OOPBeispiele\\OOPBeispiele.csproj|C:\\Users\\ptlan\\projects\\bs\\C#\\OOPBSP 2\\OOPBeispiele\\oopbeispiele\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F885BCB-B7D1-41F8-BC46-47953F2B67A0}|OOPBeispiele\\OOPBeispiele.csproj|solutionrelative:oopbeispiele\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F885BCB-B7D1-41F8-BC46-47953F2B67A0}|OOPBeispiele\\OOPBeispiele.csproj|c:\\users\\ptlan\\projects\\bs\\c#\\oopbsp 2\\oopbeispiele\\oopbeispiele\\ankunft.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F885BCB-B7D1-41F8-BC46-47953F2B67A0}|OOPBeispiele\\OOPBeispiele.csproj|solutionrelative:oopbeispiele\\ankunft.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Ankunft.cs",
+              "DocumentMoniker": "C:\\Users\\ptlan\\projects\\bs\\C#\\OOPBSP 2\\OOPBeispiele\\OOPBeispiele\\Ankunft.cs",
+              "RelativeDocumentMoniker": "OOPBeispiele\\Ankunft.cs",
+              "ToolTip": "C:\\Users\\ptlan\\projects\\bs\\C#\\OOPBSP 2\\OOPBeispiele\\OOPBeispiele\\Ankunft.cs",
+              "RelativeToolTip": "OOPBeispiele\\Ankunft.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAA5wD4AAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-16T12:42:07.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ptlan\\projects\\bs\\C#\\OOPBSP 2\\OOPBeispiele\\OOPBeispiele\\Program.cs",
+              "RelativeDocumentMoniker": "OOPBeispiele\\Program.cs",
+              "ToolTip": "C:\\Users\\ptlan\\projects\\bs\\C#\\OOPBSP 2\\OOPBeispiele\\OOPBeispiele\\Program.cs",
+              "RelativeToolTip": "OOPBeispiele\\Program.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAABsAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-16T12:40:29.094Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

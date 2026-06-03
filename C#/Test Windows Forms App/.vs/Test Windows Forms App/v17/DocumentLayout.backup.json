@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ptlan\\projects\\bs\\C#\\Test Windows Forms App\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{90D22659-B015-449B-8390-C1B0278DE048}|Test Windows Forms App\\Test Windows Forms App.csproj|c:\\users\\ptlan\\projects\\bs\\c#\\test windows forms app\\test windows forms app\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{90D22659-B015-449B-8390-C1B0278DE048}|Test Windows Forms App\\Test Windows Forms App.csproj|solutionrelative:test windows forms app\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90D22659-B015-449B-8390-C1B0278DE048}|Test Windows Forms App\\Test Windows Forms App.csproj|c:\\users\\ptlan\\projects\\bs\\c#\\test windows forms app\\test windows forms app\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90D22659-B015-449B-8390-C1B0278DE048}|Test Windows Forms App\\Test Windows Forms App.csproj|solutionrelative:test windows forms app\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\ptlan\\projects\\bs\\C#\\Test Windows Forms App\\Test Windows Forms App\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Test Windows Forms App\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\ptlan\\projects\\bs\\C#\\Test Windows Forms App\\Test Windows Forms App\\MainWindow.xaml",
+              "RelativeToolTip": "Test Windows Forms App\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-20T11:41:28.812Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ptlan\\projects\\bs\\C#\\Test Windows Forms App\\Test Windows Forms App\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Test Windows Forms App\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\ptlan\\projects\\bs\\C#\\Test Windows Forms App\\Test Windows Forms App\\MainWindow.xaml.cs",
+              "RelativeToolTip": "Test Windows Forms App\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T11:41:22.873Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

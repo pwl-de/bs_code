@@ -1,22 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ptlan\\projects\\bs\\C#\\Pr\u00FCfungsberechner\\",
+  "WorkspaceRootPath": "C:\\Users\\tlang\\projects\\bs_code\\C#\\Pr\u00FCfungsberechner\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EB5C2761-B8F5-43EC-A3D1-72C2F29EA3FA}|Pr\u00FCfungsberechner\\Pr\u00FCfungsberechner.csproj|c:\\users\\ptlan\\projects\\bs\\c#\\pr\u00FCfungsberechner\\pr\u00FCfungsberechner\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{EB5C2761-B8F5-43EC-A3D1-72C2F29EA3FA}|Pr\u00FCfungsberechner\\Pr\u00FCfungsberechner.csproj|c:\\users\\tlang\\projects\\bs_code\\c#\\pr\u00FCfungsberechner\\pr\u00FCfungsberechner\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{EB5C2761-B8F5-43EC-A3D1-72C2F29EA3FA}|Pr\u00FCfungsberechner\\Pr\u00FCfungsberechner.csproj|solutionrelative:pr\u00FCfungsberechner\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EB5C2761-B8F5-43EC-A3D1-72C2F29EA3FA}|Pr\u00FCfungsberechner\\Pr\u00FCfungsberechner.csproj|c:\\users\\ptlan\\projects\\bs\\c#\\pr\u00FCfungsberechner\\pr\u00FCfungsberechner\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB5C2761-B8F5-43EC-A3D1-72C2F29EA3FA}|Pr\u00FCfungsberechner\\Pr\u00FCfungsberechner.csproj|solutionrelative:pr\u00FCfungsberechner\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB5C2761-B8F5-43EC-A3D1-72C2F29EA3FA}|Pr\u00FCfungsberechner\\Pr\u00FCfungsberechner.csproj|C:\\Users\\ptlan\\projects\\bs\\C#\\Pr\u00FCfungsberechner\\pr\u00FCfungsberechner\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB5C2761-B8F5-43EC-A3D1-72C2F29EA3FA}|Pr\u00FCfungsberechner\\Pr\u00FCfungsberechner.csproj|solutionrelative:pr\u00FCfungsberechner\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB5C2761-B8F5-43EC-A3D1-72C2F29EA3FA}|Pr\u00FCfungsberechner\\Pr\u00FCfungsberechner.csproj|C:\\Users\\ptlan\\projects\\bs\\C#\\Pr\u00FCfungsberechner\\pr\u00FCfungsberechner\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EB5C2761-B8F5-43EC-A3D1-72C2F29EA3FA}|Pr\u00FCfungsberechner\\Pr\u00FCfungsberechner.csproj|C:\\Users\\tlang\\projects\\bs_code\\C#\\Pr\u00FCfungsberechner\\pr\u00FCfungsberechner\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EB5C2761-B8F5-43EC-A3D1-72C2F29EA3FA}|Pr\u00FCfungsberechner\\Pr\u00FCfungsberechner.csproj|solutionrelative:pr\u00FCfungsberechner\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB5C2761-B8F5-43EC-A3D1-72C2F29EA3FA}|Pr\u00FCfungsberechner\\Pr\u00FCfungsberechner.csproj|C:\\Users\\tlang\\projects\\bs_code\\C#\\Pr\u00FCfungsberechner\\pr\u00FCfungsberechner\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB5C2761-B8F5-43EC-A3D1-72C2F29EA3FA}|Pr\u00FCfungsberechner\\Pr\u00FCfungsberechner.csproj|solutionrelative:pr\u00FCfungsberechner\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -32,9 +28,9 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Form1.cs [Entwurf]",
-              "DocumentMoniker": "C:\\Users\\ptlan\\projects\\bs\\C#\\Pr\u00FCfungsberechner\\Pr\u00FCfungsberechner\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\tlang\\projects\\bs_code\\C#\\Pr\u00FCfungsberechner\\Pr\u00FCfungsberechner\\Form1.cs",
               "RelativeDocumentMoniker": "Pr\u00FCfungsberechner\\Form1.cs",
-              "ToolTip": "C:\\Users\\ptlan\\projects\\bs\\C#\\Pr\u00FCfungsberechner\\Pr\u00FCfungsberechner\\Form1.cs [Entwurf]",
+              "ToolTip": "C:\\Users\\tlang\\projects\\bs_code\\C#\\Pr\u00FCfungsberechner\\Pr\u00FCfungsberechner\\Form1.cs [Entwurf]",
               "RelativeToolTip": "Pr\u00FCfungsberechner\\Form1.cs [Entwurf]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-31T19:07:30.517Z",
@@ -43,13 +39,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ptlan\\projects\\bs\\C#\\Pr\u00FCfungsberechner\\Pr\u00FCfungsberechner\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\tlang\\projects\\bs_code\\C#\\Pr\u00FCfungsberechner\\Pr\u00FCfungsberechner\\Program.cs",
               "RelativeDocumentMoniker": "Pr\u00FCfungsberechner\\Program.cs",
-              "ToolTip": "C:\\Users\\ptlan\\projects\\bs\\C#\\Pr\u00FCfungsberechner\\Pr\u00FCfungsberechner\\Program.cs",
+              "ToolTip": "C:\\Users\\tlang\\projects\\bs_code\\C#\\Pr\u00FCfungsberechner\\Pr\u00FCfungsberechner\\Program.cs",
               "RelativeToolTip": "Pr\u00FCfungsberechner\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-04T11:51:54.805Z",
               "EditorCaption": ""
@@ -58,47 +54,13 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Form1.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\ptlan\\projects\\bs\\C#\\Pr\u00FCfungsberechner\\Pr\u00FCfungsberechner\\Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\tlang\\projects\\bs_code\\C#\\Pr\u00FCfungsberechner\\Pr\u00FCfungsberechner\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "Pr\u00FCfungsberechner\\Form1.Designer.cs",
-              "ToolTip": "C:\\Users\\ptlan\\projects\\bs\\C#\\Pr\u00FCfungsberechner\\Pr\u00FCfungsberechner\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\tlang\\projects\\bs_code\\C#\\Pr\u00FCfungsberechner\\Pr\u00FCfungsberechner\\Form1.Designer.cs",
               "RelativeToolTip": "Pr\u00FCfungsberechner\\Form1.Designer.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAzwFMMAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAGwMAAAAAAAAAADwv5sMAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-03T14:18:41.274Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "de3a7e83-a252-44dd-a90c-4de523572d71",
-        "Display": 0,
-        "X": 435,
-        "Y": 269,
-        "Width": 1214,
-        "Height": 826,
-        "WindowState": 2
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\ptlan\\projects\\bs\\C#\\Pr\u00FCfungsberechner\\Pr\u00FCfungsberechner\\Form1.cs",
-              "RelativeDocumentMoniker": "Pr\u00FCfungsberechner\\Form1.cs",
-              "ToolTip": "C:\\Users\\ptlan\\projects\\bs\\C#\\Pr\u00FCfungsberechner\\Pr\u00FCfungsberechner\\Form1.cs",
-              "RelativeToolTip": "Pr\u00FCfungsberechner\\Form1.cs",
-              "ViewState": "AgIAAIQAAAAAAAAAAAAqwJkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-01T11:47:34.481Z",
               "EditorCaption": ""
             }
           ]

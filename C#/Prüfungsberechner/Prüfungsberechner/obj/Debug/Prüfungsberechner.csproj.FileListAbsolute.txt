@@ -20,3 +20,14 @@ C:\Users\tlang\projects\bs\C#\Prüfungsberechner\Prüfungsberechner\obj\Debug\Pr
 C:\Users\tlang\projects\bs\C#\Prüfungsberechner\Prüfungsberechner\obj\Debug\Prüfungsberechner.csproj.CoreCompileInputs.cache
 C:\Users\tlang\projects\bs\C#\Prüfungsberechner\Prüfungsberechner\obj\Debug\Prüfungsberechner.exe
 C:\Users\tlang\projects\bs\C#\Prüfungsberechner\Prüfungsberechner\obj\Debug\Prüfungsberechner.pdb
+C:\Users\tlang\projects\bs_code\C#\Prüfungsberechner\Prüfungsberechner\obj\Debug\Prüfungsberechner.csproj.AssemblyReference.cache
+C:\Users\tlang\projects\bs_code\C#\Prüfungsberechner\Prüfungsberechner\obj\Debug\Prüfungsberechner.exe.config
+C:\Users\tlang\projects\bs_code\C#\Prüfungsberechner\Prüfungsberechner\obj\Debug\Prüfungsberechner.Prüfungsrechner.resources
+C:\Users\tlang\projects\bs_code\C#\Prüfungsberechner\Prüfungsberechner\obj\Debug\Prüfungsberechner.Properties.Resources.resources
+C:\Users\tlang\projects\bs_code\C#\Prüfungsberechner\Prüfungsberechner\obj\Debug\Prüfungsberechner.csproj.GenerateResource.cache
+C:\Users\tlang\projects\bs_code\C#\Prüfungsberechner\Prüfungsberechner\obj\Debug\Prüfungsberechner.csproj.CoreCompileInputs.cache
+C:\Users\tlang\projects\bs_code\C#\Prüfungsberechner\Prüfungsberechner\obj\Debug\Prüfungsberechner.exe
+C:\Users\tlang\projects\bs_code\C#\Prüfungsberechner\Prüfungsberechner\obj\Debug\Prüfungsberechner.pdb
+C:\Users\tlang\projects\bs_code\C#\Prüfungsberechner\Prüfungsberechner\bin\Debug\Prüfungsberechner.exe.config
+C:\Users\tlang\projects\bs_code\C#\Prüfungsberechner\Prüfungsberechner\bin\Debug\Prüfungsberechner.exe
+C:\Users\tlang\projects\bs_code\C#\Prüfungsberechner\Prüfungsberechner\bin\Debug\Prüfungsberechner.pdb

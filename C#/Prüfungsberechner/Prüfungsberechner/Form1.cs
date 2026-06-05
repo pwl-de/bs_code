@@ -5,9 +5,11 @@ using System.Data;
 using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Prüfungsberechner
 {
@@ -33,8 +35,6 @@ namespace Prüfungsberechner
         {
 
         }
-
-
 
 
 
@@ -102,7 +102,6 @@ namespace Prüfungsberechner
             }
         }
 
-
         // 
         private void updatePartOne(object sender, EventArgs e)
         {
@@ -148,6 +147,12 @@ namespace Prüfungsberechner
             return needIsFilled;
         }
 
+        private void clearLabels()
+        {
+
+        }
+
+
         private void updatePartTwo() // kann nur ausgeführt bzw. wird nur bei vollständiger ausfüllung ausgeführt
         {
             // Nimmt Calculation vor.
@@ -155,7 +160,7 @@ namespace Prüfungsberechner
             {
                 if (checkIfNeededIsFilled())
                 {
-                    // TODO: Clearlabels
+                    clearLabels();
 
                     
                     // THEORIE 1:
@@ -168,7 +173,7 @@ namespace Prüfungsberechner
                         
                         
                         
-                        result2Theorie1.Text = Convert.ToString(Round(Convert.ToDouble(result1Theorie1.Text) / 3)); // TODO: Runden
+                        result2Theorie1.Text = Convert.ToString(Round(Convert.ToDouble(result1Theorie1.Text) / 3)); //  Runden
 
 
 
@@ -193,7 +198,7 @@ namespace Prüfungsberechner
                     {
                         punkteMEpr2 = Convert.ToInt32(txtMEpr2.Text);
                         result1Theorie2.Text = Convert.ToString(punkteTheorie2 * 2 + punkteMEpr2);
-                        result2Theorie2.Text = Convert.ToString(Round(Convert.ToDouble(result1Theorie2.Text) / 3)); // TODO: Runden
+                        result2Theorie2.Text = Convert.ToString(Round(Convert.ToDouble(result1Theorie2.Text) / 3)); // Runden
                     }
                     else
                     {
@@ -214,7 +219,7 @@ namespace Prüfungsberechner
                     {
                         punkteMEprWiSo = Convert.ToInt32(txtMEprWiSo.Text);
                         result1WiSo.Text = Convert.ToString(punkteWiSo * 2 + punkteMEprWiSo);
-                        result2WiSo.Text = Convert.ToString(Round(Convert.ToDouble(result1WiSo.Text) / 3)); // TODO: Runden
+                        result2WiSo.Text = Convert.ToString(Round(Convert.ToDouble(result1WiSo.Text) / 3)); // Runden
                     }
                     else
                     {
@@ -241,6 +246,23 @@ namespace Prüfungsberechner
 
                     totPunkteProjekt.Text = result2Projekt.Text;
                     txtNoteProjekt.Text = Convert.ToString(calculateNote(Convert.ToInt32(totPunkteProjekt.Text)));
+
+
+
+
+
+
+                    // Ergebnis Teil 2 Der Abschlussprüfung:                  
+                    result3Part2.Text = Convert.ToString(Convert.ToInt32(result3Projekt.Text) + Convert.ToInt32(result3Theorie1.Text) + Convert.ToInt32(result3Theorie2.Text) + Convert.ToInt32(result3WiSo.Text));
+                    totPunktePart2.Text = Convert.ToString(Round(Convert.ToDouble(result3Part2.Text) / 80));
+                    txtNotePart2.Text = Convert.ToString(calculateNote(Convert.ToInt32(totPunktePart2.Text)));
+
+                    //Gesamtergebnis:
+                    sumPart1.Text = lblErgebnis2.Text;
+                    sumPart2.Text = result3Part2.Text;
+                    totalPunkteAll.Text = Convert.ToString(Round((Convert.ToDouble(sumPart1.Text) + Convert.ToDouble(sumPart2.Text)) / 100)); // Runden
+                    txtNoteAll.Text = Convert.ToString(calculateNote(Convert.ToInt32(totalPunkteAll.Text)));
+
 
                 }
             }
@@ -424,12 +446,69 @@ namespace Prüfungsberechner
             }
         }
 
+        private void Prüfungsrechner_Load(object sender, EventArgs e)
+        {
+            selectJob.SelectedIndex = 0;
+            labTheorie1.Text = "Konzeption und Administration von IT-Systemen";
+            labTheorie2.Text = "Analyse und Entwicklung";
 
+            //updateTheoJob();
+        }
 
-
-
-
-
-
+        private void updateTheoJob(object sender, EventArgs e)
+        {
+            switch (selectJob.SelectedIndex) 
+            {
+                case 0:
+                    {
+                        //sys
+                        labTheorie1.Text = "Konzeption und Administration von IT-Systemen";
+                        labTheorie2.Text = "Analyse und Entwicklung";
+                        break;
+                    }
+                case 1:
+                    {
+                        //anwendung
+                        labTheorie1.Text = "Planen eines Softwareproduktes";
+                        labTheorie2.Text = "Entwicklung und Umsetzung von Algorithmen";
+                        break;
+                    }
+                case 2:
+                    {
+                        //daten
+                        labTheorie1.Text = "Durchführen einer Prozessanalyse";
+                        labTheorie2.Text = "Sicherstellen der Datenqualität";
+                        break;
+                    }
+                case 3:
+                    {
+                        //digitale vernetzung
+                        labTheorie1.Text = "Diagnose und Störungsbeseitigung \n in vernetzten Systemen";
+                        labTheorie2.Text = "Betrieb und Erweiterung \n von vernetzten Systemen";
+                        break;
+                    }
+                case 4:
+                    {
+                        // IT-System-Elektroniker
+                        labTheorie1.Text = "Installation von und Service an IT-Geräten, \n IT-Systemen und IT-Infrastrukturen";
+                        labTheorie2.Text = "Anbindung von Geräten,Systemen und \n Betriebsmitteln an die Stromversorgung";
+                        break;
+                    }
+                case 5:
+                    {
+                        // Kaufmann für Digitalisierungsmanagement
+                        labTheorie1.Text = "Entwicklung eines digitalen Geschäftsmodells";
+                        labTheorie2.Text = "Kaufmännische Unterstützungsprozesse";
+                        break;
+                    }
+                case 6:
+                    {
+                        // it sys management
+                        labTheorie1.Text = "Einführen einer IT-Systemlösung";
+                        labTheorie2.Text = "Kaufmännische Unterstützungsprozesse";
+                        break;
+                    }
+            }
+        }
     }
 }

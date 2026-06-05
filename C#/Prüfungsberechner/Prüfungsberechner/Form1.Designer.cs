@@ -31,7 +31,7 @@
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.generalInfo = new System.Windows.Forms.TableLayoutPanel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.selectJob = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -86,13 +86,13 @@
             this.label17 = new System.Windows.Forms.Label();
             this.tableTeil2 = new System.Windows.Forms.TableLayoutPanel();
             this.panel110 = new System.Windows.Forms.Panel();
-            this.label94 = new System.Windows.Forms.Label();
+            this.txtNoteAll = new System.Windows.Forms.Label();
             this.panel109 = new System.Windows.Forms.Panel();
-            this.label93 = new System.Windows.Forms.Label();
+            this.totalPunkteAll = new System.Windows.Forms.Label();
             this.panel108 = new System.Windows.Forms.Panel();
             this.label92 = new System.Windows.Forms.Label();
             this.panel107 = new System.Windows.Forms.Panel();
-            this.label91 = new System.Windows.Forms.Label();
+            this.sumPart2 = new System.Windows.Forms.Label();
             this.panel106 = new System.Windows.Forms.Panel();
             this.label90 = new System.Windows.Forms.Label();
             this.panel105 = new System.Windows.Forms.Panel();
@@ -100,13 +100,13 @@
             this.panel104 = new System.Windows.Forms.Panel();
             this.label88 = new System.Windows.Forms.Label();
             this.panel103 = new System.Windows.Forms.Panel();
-            this.label87 = new System.Windows.Forms.Label();
+            this.sumPart1 = new System.Windows.Forms.Label();
             this.panel100 = new System.Windows.Forms.Panel();
             this.label84 = new System.Windows.Forms.Label();
             this.panel99 = new System.Windows.Forms.Panel();
-            this.label83 = new System.Windows.Forms.Label();
+            this.txtNotePart2 = new System.Windows.Forms.Label();
             this.panel98 = new System.Windows.Forms.Panel();
-            this.label82 = new System.Windows.Forms.Label();
+            this.totPunktePart2 = new System.Windows.Forms.Label();
             this.panel97 = new System.Windows.Forms.Panel();
             this.label81 = new System.Windows.Forms.Label();
             this.panel96 = new System.Windows.Forms.Panel();
@@ -166,7 +166,7 @@
             this.panel32 = new System.Windows.Forms.Panel();
             this.label30 = new System.Windows.Forms.Label();
             this.panel33 = new System.Windows.Forms.Panel();
-            this.label31 = new System.Windows.Forms.Label();
+            this.labTheorie1 = new System.Windows.Forms.Label();
             this.panel24 = new System.Windows.Forms.Panel();
             this.label22 = new System.Windows.Forms.Label();
             this.panel27 = new System.Windows.Forms.Panel();
@@ -190,7 +190,7 @@
             this.panel42 = new System.Windows.Forms.Panel();
             this.result3Theorie1 = new System.Windows.Forms.Label();
             this.panel30 = new System.Windows.Forms.Panel();
-            this.label39 = new System.Windows.Forms.Label();
+            this.labTheorie2 = new System.Windows.Forms.Label();
             this.panel46 = new System.Windows.Forms.Panel();
             this.txtPunkteTheorie2 = new System.Windows.Forms.TextBox();
             this.panel47 = new System.Windows.Forms.Panel();
@@ -375,7 +375,7 @@
             this.generalInfo.Controls.Add(this.panel2, 1, 0);
             this.generalInfo.Controls.Add(this.panel1, 0, 0);
             this.generalInfo.Location = new System.Drawing.Point(9, 10);
-            this.generalInfo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.generalInfo.Margin = new System.Windows.Forms.Padding(2);
             this.generalInfo.Name = "generalInfo";
             this.generalInfo.RowCount = 2;
             this.generalInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -387,21 +387,31 @@
             // 
             this.panel4.AutoSize = true;
             this.panel4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.panel4.Controls.Add(this.textBox3);
+            this.panel4.Controls.Add(this.selectJob);
             this.panel4.Controls.Add(this.label3);
             this.panel4.Location = new System.Drawing.Point(584, 46);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(448, 33);
+            this.panel4.Size = new System.Drawing.Size(451, 32);
             this.panel4.TabIndex = 1;
             // 
-            // textBox3
+            // selectJob
             // 
-            this.textBox3.Location = new System.Drawing.Point(168, 11);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(278, 20);
-            this.textBox3.TabIndex = 1;
+            this.selectJob.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.selectJob.FormattingEnabled = true;
+            this.selectJob.Items.AddRange(new object[] {
+            "Fachinformatiker Systemintegration",
+            "Fachinformatiker Anwendungsentwicklung",
+            "Fachinformatiker Daten- und Prozessanalyse",
+            "Fachinformatiker Digitale Vernetzung",
+            "IT-Systhem-Elektroniker",
+            "Kaufmann für Digitaliersierungsmanagement ",
+            "Kaufmann für IT-Systhem-Management"});
+            this.selectJob.Location = new System.Drawing.Point(169, 8);
+            this.selectJob.Name = "selectJob";
+            this.selectJob.Size = new System.Drawing.Size(279, 21);
+            this.selectJob.TabIndex = 1;
+            this.selectJob.SelectedIndexChanged += new System.EventHandler(this.updateTheoJob);
             // 
             // label3
             // 
@@ -421,7 +431,7 @@
             this.panel3.Controls.Add(this.textBox2);
             this.panel3.Controls.Add(this.label2);
             this.panel3.Location = new System.Drawing.Point(3, 46);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(460, 33);
             this.panel3.TabIndex = 1;
@@ -429,7 +439,7 @@
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(182, 11);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(276, 20);
             this.textBox2.TabIndex = 1;
@@ -453,7 +463,7 @@
             this.panel2.Controls.Add(this.textBox1);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(584, 3);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(450, 30);
             this.panel2.TabIndex = 1;
@@ -461,7 +471,7 @@
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(168, 8);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(280, 20);
             this.textBox1.TabIndex = 1;
@@ -485,7 +495,7 @@
             this.panel1.Controls.Add(this.labelStudentName);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(3, 3);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(576, 38);
             this.panel1.TabIndex = 0;
@@ -493,7 +503,7 @@
             // txtStudentName
             // 
             this.txtStudentName.Location = new System.Drawing.Point(182, 11);
-            this.txtStudentName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtStudentName.Margin = new System.Windows.Forms.Padding(2);
             this.txtStudentName.Name = "txtStudentName";
             this.txtStudentName.Size = new System.Drawing.Size(276, 20);
             this.txtStudentName.TabIndex = 1;
@@ -517,7 +527,7 @@
             this.rechnerGesamt.Controls.Add(this.tableTeil1, 0, 0);
             this.rechnerGesamt.Controls.Add(this.tableTeil2, 0, 1);
             this.rechnerGesamt.Location = new System.Drawing.Point(12, 112);
-            this.rechnerGesamt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rechnerGesamt.Margin = new System.Windows.Forms.Padding(2);
             this.rechnerGesamt.Name = "rechnerGesamt";
             this.rechnerGesamt.RowCount = 2;
             this.rechnerGesamt.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 180F));
@@ -560,7 +570,7 @@
             this.tableTeil1.Controls.Add(this.panel22, 7, 2);
             this.tableTeil1.Controls.Add(this.panel19, 1, 2);
             this.tableTeil1.Location = new System.Drawing.Point(3, 3);
-            this.tableTeil1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableTeil1.Margin = new System.Windows.Forms.Padding(2);
             this.tableTeil1.Name = "tableTeil1";
             this.tableTeil1.RowCount = 3;
             this.tableTeil1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 27.93296F));
@@ -635,7 +645,7 @@
             this.panel6.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panel6.Controls.Add(this.label4);
             this.panel6.Location = new System.Drawing.Point(240, 2);
-            this.panel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel6.Margin = new System.Windows.Forms.Padding(2);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(69, 28);
             this.panel6.TabIndex = 2;
@@ -657,7 +667,7 @@
             this.panel8.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panel8.Controls.Add(this.label7);
             this.panel8.Location = new System.Drawing.Point(479, 2);
-            this.panel8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel8.Margin = new System.Windows.Forms.Padding(2);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(61, 28);
             this.panel8.TabIndex = 4;
@@ -679,7 +689,7 @@
             this.panel7.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panel7.Controls.Add(this.label5);
             this.panel7.Location = new System.Drawing.Point(387, 2);
-            this.panel7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel7.Margin = new System.Windows.Forms.Padding(2);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(61, 28);
             this.panel7.TabIndex = 3;
@@ -701,7 +711,7 @@
             this.panel11.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panel11.Controls.Add(this.label10);
             this.panel11.Location = new System.Drawing.Point(1064, 2);
-            this.panel11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel11.Margin = new System.Windows.Forms.Padding(2);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(51, 28);
             this.panel11.TabIndex = 7;
@@ -723,7 +733,7 @@
             this.panel10.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panel10.Controls.Add(this.label9);
             this.panel10.Location = new System.Drawing.Point(1041, 2);
-            this.panel10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel10.Margin = new System.Windows.Forms.Padding(2);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(18, 28);
             this.panel10.TabIndex = 6;
@@ -745,7 +755,7 @@
             this.panel9.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panel9.Controls.Add(this.label8);
             this.panel9.Location = new System.Drawing.Point(952, 2);
-            this.panel9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel9.Margin = new System.Windows.Forms.Padding(2);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(69, 28);
             this.panel9.TabIndex = 5;
@@ -767,7 +777,7 @@
             this.panel5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panel5.Controls.Add(this.label6);
             this.panel5.Location = new System.Drawing.Point(2, 2);
-            this.panel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(234, 28);
             this.panel5.TabIndex = 1;
@@ -1080,7 +1090,7 @@
             this.tableTeil2.Controls.Add(this.panel102, 2, 14);
             this.tableTeil2.Controls.Add(this.panel112, 7, 12);
             this.tableTeil2.Location = new System.Drawing.Point(3, 184);
-            this.tableTeil2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableTeil2.Margin = new System.Windows.Forms.Padding(2);
             this.tableTeil2.Name = "tableTeil2";
             this.tableTeil2.RowCount = 15;
             this.tableTeil2.RowStyles.Add(new System.Windows.Forms.RowStyle());
@@ -1105,41 +1115,41 @@
             // 
             this.panel110.AutoSize = true;
             this.panel110.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.panel110.Controls.Add(this.label94);
+            this.panel110.Controls.Add(this.txtNoteAll);
             this.panel110.Location = new System.Drawing.Point(1061, 358);
             this.panel110.Name = "panel110";
             this.panel110.Size = new System.Drawing.Size(78, 31);
             this.panel110.TabIndex = 23;
             // 
-            // label94
+            // txtNoteAll
             // 
-            this.label94.AutoSize = true;
-            this.label94.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label94.Location = new System.Drawing.Point(2, 11);
-            this.label94.Name = "label94";
-            this.label94.Size = new System.Drawing.Size(73, 20);
-            this.label94.TabIndex = 1;
-            this.label94.Text = "RESULT";
+            this.txtNoteAll.AutoSize = true;
+            this.txtNoteAll.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNoteAll.Location = new System.Drawing.Point(2, 11);
+            this.txtNoteAll.Name = "txtNoteAll";
+            this.txtNoteAll.Size = new System.Drawing.Size(73, 20);
+            this.txtNoteAll.TabIndex = 1;
+            this.txtNoteAll.Text = "RESULT";
             // 
             // panel109
             // 
             this.panel109.AutoSize = true;
             this.panel109.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.panel109.Controls.Add(this.label93);
+            this.panel109.Controls.Add(this.totalPunkteAll);
             this.panel109.Location = new System.Drawing.Point(955, 358);
             this.panel109.Name = "panel109";
             this.panel109.Size = new System.Drawing.Size(78, 31);
             this.panel109.TabIndex = 23;
             // 
-            // label93
+            // totalPunkteAll
             // 
-            this.label93.AutoSize = true;
-            this.label93.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label93.Location = new System.Drawing.Point(2, 11);
-            this.label93.Name = "label93";
-            this.label93.Size = new System.Drawing.Size(73, 20);
-            this.label93.TabIndex = 1;
-            this.label93.Text = "RESULT";
+            this.totalPunkteAll.AutoSize = true;
+            this.totalPunkteAll.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.totalPunkteAll.Location = new System.Drawing.Point(2, 11);
+            this.totalPunkteAll.Name = "totalPunkteAll";
+            this.totalPunkteAll.Size = new System.Drawing.Size(73, 20);
+            this.totalPunkteAll.TabIndex = 1;
+            this.totalPunkteAll.Text = "RESULT";
             // 
             // panel108
             // 
@@ -1165,21 +1175,21 @@
             // 
             this.panel107.AutoSize = true;
             this.panel107.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.panel107.Controls.Add(this.label91);
+            this.panel107.Controls.Add(this.sumPart2);
             this.panel107.Location = new System.Drawing.Point(755, 358);
             this.panel107.Name = "panel107";
             this.panel107.Size = new System.Drawing.Size(78, 31);
             this.panel107.TabIndex = 38;
             // 
-            // label91
+            // sumPart2
             // 
-            this.label91.AutoSize = true;
-            this.label91.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label91.Location = new System.Drawing.Point(2, 11);
-            this.label91.Name = "label91";
-            this.label91.Size = new System.Drawing.Size(73, 20);
-            this.label91.TabIndex = 1;
-            this.label91.Text = "RESULT";
+            this.sumPart2.AutoSize = true;
+            this.sumPart2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sumPart2.Location = new System.Drawing.Point(2, 11);
+            this.sumPart2.Name = "sumPart2";
+            this.sumPart2.Size = new System.Drawing.Size(73, 20);
+            this.sumPart2.TabIndex = 1;
+            this.sumPart2.Text = "RESULT";
             // 
             // panel106
             // 
@@ -1243,21 +1253,21 @@
             // 
             this.panel103.AutoSize = true;
             this.panel103.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.panel103.Controls.Add(this.label87);
+            this.panel103.Controls.Add(this.sumPart1);
             this.panel103.Location = new System.Drawing.Point(377, 358);
             this.panel103.Name = "panel103";
             this.panel103.Size = new System.Drawing.Size(78, 31);
             this.panel103.TabIndex = 36;
             // 
-            // label87
+            // sumPart1
             // 
-            this.label87.AutoSize = true;
-            this.label87.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label87.Location = new System.Drawing.Point(2, 11);
-            this.label87.Name = "label87";
-            this.label87.Size = new System.Drawing.Size(73, 20);
-            this.label87.TabIndex = 1;
-            this.label87.Text = "RESULT";
+            this.sumPart1.AutoSize = true;
+            this.sumPart1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sumPart1.Location = new System.Drawing.Point(2, 11);
+            this.sumPart1.Name = "sumPart1";
+            this.sumPart1.Size = new System.Drawing.Size(73, 20);
+            this.sumPart1.TabIndex = 1;
+            this.sumPart1.Text = "RESULT";
             // 
             // panel100
             // 
@@ -1282,41 +1292,41 @@
             // 
             this.panel99.AutoSize = true;
             this.panel99.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.panel99.Controls.Add(this.label83);
+            this.panel99.Controls.Add(this.txtNotePart2);
             this.panel99.Location = new System.Drawing.Point(1061, 293);
             this.panel99.Name = "panel99";
             this.panel99.Size = new System.Drawing.Size(78, 31);
             this.panel99.TabIndex = 39;
             // 
-            // label83
+            // txtNotePart2
             // 
-            this.label83.AutoSize = true;
-            this.label83.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label83.Location = new System.Drawing.Point(2, 11);
-            this.label83.Name = "label83";
-            this.label83.Size = new System.Drawing.Size(73, 20);
-            this.label83.TabIndex = 1;
-            this.label83.Text = "RESULT";
+            this.txtNotePart2.AutoSize = true;
+            this.txtNotePart2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNotePart2.Location = new System.Drawing.Point(2, 11);
+            this.txtNotePart2.Name = "txtNotePart2";
+            this.txtNotePart2.Size = new System.Drawing.Size(73, 20);
+            this.txtNotePart2.TabIndex = 1;
+            this.txtNotePart2.Text = "RESULT";
             // 
             // panel98
             // 
             this.panel98.AutoSize = true;
             this.panel98.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.panel98.Controls.Add(this.label82);
+            this.panel98.Controls.Add(this.totPunktePart2);
             this.panel98.Location = new System.Drawing.Point(955, 293);
             this.panel98.Name = "panel98";
             this.panel98.Size = new System.Drawing.Size(78, 31);
             this.panel98.TabIndex = 39;
             // 
-            // label82
+            // totPunktePart2
             // 
-            this.label82.AutoSize = true;
-            this.label82.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label82.Location = new System.Drawing.Point(2, 11);
-            this.label82.Name = "label82";
-            this.label82.Size = new System.Drawing.Size(73, 20);
-            this.label82.TabIndex = 1;
-            this.label82.Text = "RESULT";
+            this.totPunktePart2.AutoSize = true;
+            this.totPunktePart2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.totPunktePart2.Location = new System.Drawing.Point(2, 11);
+            this.totPunktePart2.Name = "totPunktePart2";
+            this.totPunktePart2.Size = new System.Drawing.Size(73, 20);
+            this.totPunktePart2.TabIndex = 1;
+            this.totPunktePart2.Text = "RESULT";
             // 
             // panel97
             // 
@@ -1344,7 +1354,7 @@
             this.panel96.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panel96.Controls.Add(this.label38);
             this.panel96.Location = new System.Drawing.Point(1060, 2);
-            this.panel96.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel96.Margin = new System.Windows.Forms.Padding(2);
             this.panel96.Name = "panel96";
             this.panel96.Size = new System.Drawing.Size(51, 28);
             this.panel96.TabIndex = 8;
@@ -1811,7 +1821,7 @@
             this.panel26.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panel26.Controls.Add(this.label24);
             this.panel26.Location = new System.Drawing.Point(242, 2);
-            this.panel26.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel26.Margin = new System.Windows.Forms.Padding(2);
             this.panel26.Name = "panel26";
             this.panel26.Size = new System.Drawing.Size(68, 28);
             this.panel26.TabIndex = 2;
@@ -1833,7 +1843,7 @@
             this.panel28.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panel28.Controls.Add(this.label26);
             this.panel28.Location = new System.Drawing.Point(376, 2);
-            this.panel28.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel28.Margin = new System.Windows.Forms.Padding(2);
             this.panel28.Name = "panel28";
             this.panel28.Size = new System.Drawing.Size(60, 28);
             this.panel28.TabIndex = 3;
@@ -1854,7 +1864,7 @@
             this.panel29.AutoSize = true;
             this.panel29.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panel29.Location = new System.Drawing.Point(685, 2);
-            this.panel29.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel29.Margin = new System.Windows.Forms.Padding(2);
             this.panel29.Name = "panel29";
             this.panel29.Size = new System.Drawing.Size(0, 0);
             this.panel29.TabIndex = 7;
@@ -1864,7 +1874,7 @@
             this.panel31.AutoSize = true;
             this.panel31.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panel31.Location = new System.Drawing.Point(547, 2);
-            this.panel31.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel31.Margin = new System.Windows.Forms.Padding(2);
             this.panel31.Name = "panel31";
             this.panel31.Size = new System.Drawing.Size(0, 0);
             this.panel31.TabIndex = 5;
@@ -1875,7 +1885,7 @@
             this.panel32.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panel32.Controls.Add(this.label30);
             this.panel32.Location = new System.Drawing.Point(2, 2);
-            this.panel32.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel32.Margin = new System.Windows.Forms.Padding(2);
             this.panel32.Name = "panel32";
             this.panel32.Size = new System.Drawing.Size(236, 28);
             this.panel32.TabIndex = 1;
@@ -1895,20 +1905,20 @@
             // 
             this.panel33.AutoSize = true;
             this.panel33.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.panel33.Controls.Add(this.label31);
+            this.panel33.Controls.Add(this.labTheorie1);
             this.panel33.Location = new System.Drawing.Point(3, 35);
             this.panel33.Name = "panel33";
             this.panel33.Size = new System.Drawing.Size(58, 24);
             this.panel33.TabIndex = 9;
             // 
-            // label31
+            // labTheorie1
             // 
-            this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(3, 11);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(52, 13);
-            this.label31.TabIndex = 8;
-            this.label31.Text = "Theorie 1";
+            this.labTheorie1.AutoSize = true;
+            this.labTheorie1.Location = new System.Drawing.Point(3, 11);
+            this.labTheorie1.Name = "labTheorie1";
+            this.labTheorie1.Size = new System.Drawing.Size(52, 13);
+            this.labTheorie1.TabIndex = 8;
+            this.labTheorie1.Text = "Theorie 1";
             // 
             // panel24
             // 
@@ -1934,7 +1944,7 @@
             this.panel27.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panel27.Controls.Add(this.label25);
             this.panel27.Location = new System.Drawing.Point(482, 2);
-            this.panel27.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel27.Margin = new System.Windows.Forms.Padding(2);
             this.panel27.Name = "panel27";
             this.panel27.Size = new System.Drawing.Size(61, 28);
             this.panel27.TabIndex = 4;
@@ -1976,7 +1986,7 @@
             this.panel36.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panel36.Controls.Add(this.label27);
             this.panel36.Location = new System.Drawing.Point(598, 2);
-            this.panel36.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel36.Margin = new System.Windows.Forms.Padding(2);
             this.panel36.Name = "panel36";
             this.panel36.Size = new System.Drawing.Size(61, 28);
             this.panel36.TabIndex = 14;
@@ -2094,7 +2104,7 @@
             this.panel41.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panel41.Controls.Add(this.label34);
             this.panel41.Location = new System.Drawing.Point(754, 2);
-            this.panel41.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel41.Margin = new System.Windows.Forms.Padding(2);
             this.panel41.Name = "panel41";
             this.panel41.Size = new System.Drawing.Size(61, 28);
             this.panel41.TabIndex = 19;
@@ -2134,20 +2144,20 @@
             // 
             this.panel30.AutoSize = true;
             this.panel30.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.panel30.Controls.Add(this.label39);
+            this.panel30.Controls.Add(this.labTheorie2);
             this.panel30.Location = new System.Drawing.Point(3, 76);
             this.panel30.Name = "panel30";
             this.panel30.Size = new System.Drawing.Size(58, 24);
             this.panel30.TabIndex = 24;
             // 
-            // label39
+            // labTheorie2
             // 
-            this.label39.AutoSize = true;
-            this.label39.Location = new System.Drawing.Point(3, 11);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(52, 13);
-            this.label39.TabIndex = 8;
-            this.label39.Text = "Theorie 2";
+            this.labTheorie2.AutoSize = true;
+            this.labTheorie2.Location = new System.Drawing.Point(3, 11);
+            this.labTheorie2.Name = "labTheorie2";
+            this.labTheorie2.Size = new System.Drawing.Size(52, 13);
+            this.labTheorie2.TabIndex = 8;
+            this.labTheorie2.Text = "Theorie 2";
             // 
             // panel46
             // 
@@ -2496,7 +2506,7 @@
             this.panel44.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panel44.Controls.Add(this.label37);
             this.panel44.Location = new System.Drawing.Point(1038, 2);
-            this.panel44.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel44.Margin = new System.Windows.Forms.Padding(2);
             this.panel44.Name = "panel44";
             this.panel44.Size = new System.Drawing.Size(18, 28);
             this.panel44.TabIndex = 22;
@@ -2517,7 +2527,7 @@
             this.panel45.AutoSize = true;
             this.panel45.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panel45.Location = new System.Drawing.Point(841, 2);
-            this.panel45.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel45.Margin = new System.Windows.Forms.Padding(2);
             this.panel45.Name = "panel45";
             this.panel45.Size = new System.Drawing.Size(0, 0);
             this.panel45.TabIndex = 23;
@@ -2528,7 +2538,7 @@
             this.panel43.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panel43.Controls.Add(this.label36);
             this.panel43.Location = new System.Drawing.Point(954, 2);
-            this.panel43.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel43.Margin = new System.Windows.Forms.Padding(2);
             this.panel43.Name = "panel43";
             this.panel43.Size = new System.Drawing.Size(69, 28);
             this.panel43.TabIndex = 21;
@@ -2772,9 +2782,10 @@
             this.ClientSize = new System.Drawing.Size(1184, 811);
             this.Controls.Add(this.rechnerGesamt);
             this.Controls.Add(this.generalInfo);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Prüfungsrechner";
             this.Text = "Prüfungsrechner by Max, Julian & Paul";
+            this.Load += new System.EventHandler(this.Prüfungsrechner_Load);
             this.generalInfo.ResumeLayout(false);
             this.generalInfo.PerformLayout();
             this.panel4.ResumeLayout(false);
@@ -3003,7 +3014,6 @@
         private System.Windows.Forms.TextBox txtStudentName;
         private System.Windows.Forms.Label labelStudentName;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.TextBox textBox2;
@@ -3059,7 +3069,7 @@
         private System.Windows.Forms.Panel panel32;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Panel panel33;
-        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label labTheorie1;
         private System.Windows.Forms.Panel panel34;
         private System.Windows.Forms.TextBox txtPunkteTheorie1;
         private System.Windows.Forms.Panel panel35;
@@ -3090,7 +3100,7 @@
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.Panel panel45;
         private System.Windows.Forms.Panel panel30;
-        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.Label labTheorie2;
         private System.Windows.Forms.Panel panel46;
         private System.Windows.Forms.TextBox txtPunkteTheorie2;
         private System.Windows.Forms.Panel panel58;
@@ -3189,9 +3199,9 @@
         private System.Windows.Forms.Panel panel95;
         private System.Windows.Forms.Label result3Part2;
         private System.Windows.Forms.Panel panel99;
-        private System.Windows.Forms.Label label83;
+        private System.Windows.Forms.Label txtNotePart2;
         private System.Windows.Forms.Panel panel98;
-        private System.Windows.Forms.Label label82;
+        private System.Windows.Forms.Label totPunktePart2;
         private System.Windows.Forms.Panel panel97;
         private System.Windows.Forms.Label label81;
         private System.Windows.Forms.Panel panel101;
@@ -3199,13 +3209,13 @@
         private System.Windows.Forms.Panel panel100;
         private System.Windows.Forms.Label label84;
         private System.Windows.Forms.Panel panel110;
-        private System.Windows.Forms.Label label94;
+        private System.Windows.Forms.Label txtNoteAll;
         private System.Windows.Forms.Panel panel109;
-        private System.Windows.Forms.Label label93;
+        private System.Windows.Forms.Label totalPunkteAll;
         private System.Windows.Forms.Panel panel108;
         private System.Windows.Forms.Label label92;
         private System.Windows.Forms.Panel panel107;
-        private System.Windows.Forms.Label label91;
+        private System.Windows.Forms.Label sumPart2;
         private System.Windows.Forms.Panel panel106;
         private System.Windows.Forms.Label label90;
         private System.Windows.Forms.Panel panel105;
@@ -3213,7 +3223,7 @@
         private System.Windows.Forms.Panel panel104;
         private System.Windows.Forms.Label label88;
         private System.Windows.Forms.Panel panel103;
-        private System.Windows.Forms.Label label87;
+        private System.Windows.Forms.Label sumPart1;
         private System.Windows.Forms.Panel panel102;
         private System.Windows.Forms.Label label86;
         private System.Windows.Forms.Panel panel111;
@@ -3222,6 +3232,7 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Panel panel112;
         private System.Windows.Forms.Label label96;
+        private System.Windows.Forms.ComboBox selectJob;
     }
 }
 

@@ -49,7 +49,7 @@
               "RelativeDocumentMoniker": "Pr\u00FCfungsberechner\\Program.cs",
               "ToolTip": "C:\\Users\\tlang\\projects\\bs_code\\C#\\Pr\u00FCfungsberechner\\Pr\u00FCfungsberechner\\Program.cs",
               "RelativeToolTip": "Pr\u00FCfungsberechner\\Program.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAATAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-04T11:51:54.805Z",
               "EditorCaption": ""
@@ -64,8 +64,7 @@
               "RelativeToolTip": "Pr\u00FCfungsberechner\\Form1.Designer.cs",
               "ViewState": "AgIAAGwMAAAAAAAAAADwv5sMAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-03T14:18:41.274Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-03T14:18:41.274Z"
             }
           ]
         }
@@ -75,12 +74,12 @@
       "Orientation": 0,
       "VerticalTabListWidth": 256,
       "FloatingWindowState": {
-        "Id": "2a39e5c4-ad8c-42f3-a9c5-1b41b2e8f4f7",
+        "Id": "632acca1-ce4b-458e-93fa-bb9d34c9eca8",
         "Display": 0,
-        "X": 637,
-        "Y": 118,
-        "Width": 2040,
-        "Height": 1216,
+        "X": 604,
+        "Y": 148,
+        "Width": 2054,
+        "Height": 1169,
         "WindowState": 0
       },
       "DocumentGroups": [
@@ -96,9 +95,9 @@
               "RelativeDocumentMoniker": "Pr\u00FCfungsberechner\\Form1.cs",
               "ToolTip": "C:\\Users\\tlang\\projects\\bs_code\\C#\\Pr\u00FCfungsberechner\\Pr\u00FCfungsberechner\\Form1.cs",
               "RelativeToolTip": "Pr\u00FCfungsberechner\\Form1.cs",
-              "ViewState": "AgIAANcAAAAAAAAAAAAAAPQAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAMgBAAAAAAAAAAAUwO0BAABSAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-01T11:47:34.481Z",
+              "WhenOpened": "2026-06-05T18:37:36.453Z",
               "EditorCaption": ""
             }
           ]

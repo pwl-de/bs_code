@@ -102,6 +102,151 @@ namespace Prüfungsberechner
             }
         }
 
+
+        private bool checkIfNeededIsFilled()
+        {
+            bool needIsFilled = false;
+
+            // Checkt ob needed filled ist.
+            if (!txtPunkteTheorie1.Text.Equals("") && !txtPunkteTheorie2.Text.Equals("") && !txtPunkteWiSo.Text.Equals("") && !txtPunkteDoku.Text.Equals("") && !txtPunktePrFa.Text.Equals("") && !txtPunkte1.Text.Equals(""))
+            { needIsFilled = true; }
+            return needIsFilled;
+        }
+
+        private void clearAll()
+        {
+
+
+
+
+            //Teil 1:
+            lblErgebnis1.Text = "";
+            lblErgebnis2.Text = "";
+            totPunkte1.Text = "";
+            totPunkte2.Text = "";
+            txtNote1.Text = "";
+            txtNote2.Text = "";
+            
+
+            //theorie 1:
+            result1Theorie1.Text = "";
+            result2Theorie1.Text = "";
+            result3Theorie1.Text = "";
+            totPunkteTheorie1.Text = "";
+            txtNoteTheorie1.Text = "";
+
+            //Theorie 2:
+            result1Theorie2.Text = "";
+            result2Theorie2.Text = "";
+            result3Theorie2.Text = "";
+            totPunkteTheorie2.Text = "";
+            txtNoteTheorie2.Text = "";
+
+            // wusi:
+            result1WiSo.Text = "";
+            result2WiSo.Text = "";
+            result3WiSo.Text = "";
+            totPunkteWiSo.Text = "";
+            txtNoteWiSo.Text = "";
+
+            //Projek
+            result1Doku.Text = "";
+            result1PrFa.Text = "";
+            txtSumProjekt.Text = "";
+            result2Projekt.Text = "";
+            result3Projekt.Text = "";
+            totPunkteProjekt.Text = "";
+            txtNoteProjekt.Text = "";
+
+            // Part 2
+            result3Part2.Text = "";
+            totPunktePart2.Text = "";
+            txtNotePart2.Text = "";
+
+            //Gesamtergebnis
+            sumPart1.Text = "";
+            sumPart2.Text = "";
+            totalPunkteAll.Text = "";
+            txtNoteAll.Text = "";
+
+
+            //mepr
+            txtMEpr1.Text = "";
+            txtMEpr2.Text = "";
+            txtMEprWiSo.Text = "";
+            
+
+        }
+
+        private void clearLabels()
+        {
+
+            //Teil 1:
+            /*
+            lblErgebnis1.Text = "";
+            lblErgebnis2.Text = "";
+            totPunkte1.Text = "";
+            totPunkte2.Text = "";
+            txtNote1.Text = "";
+            txtNote2.Text = "";
+            */
+
+            //theorie 1:
+            result1Theorie1.Text = "";
+            result2Theorie1.Text = "";
+            result3Theorie1.Text = "";
+            totPunkteTheorie1.Text = "";
+            txtNoteTheorie1.Text = "";
+
+            //Theorie 2:
+            result1Theorie2.Text = "";
+            result2Theorie2.Text = "";
+            result3Theorie2.Text = "";
+            totPunkteTheorie2.Text = "";
+            txtNoteTheorie2.Text = "";
+
+            // wusi:
+            result1WiSo.Text = "";
+            result2WiSo.Text = "";
+            result3WiSo.Text = "";
+            totPunkteWiSo.Text = "";
+            txtNoteWiSo.Text = "";
+
+            //Projek
+            result1Doku.Text = "";
+            result1PrFa.Text = "";
+            txtSumProjekt.Text = "";
+            result2Projekt.Text = "";
+            result3Projekt.Text = "";
+            totPunkteProjekt.Text = "";
+            txtNoteProjekt.Text = "";
+
+            // Part 2
+            result3Part2.Text = "";
+            totPunktePart2.Text = "";
+            txtNotePart2.Text = "";
+
+            //Gesamtergebnis
+            sumPart1.Text = "";
+            sumPart2.Text = "";
+            totalPunkteAll.Text = "";
+            txtNoteAll.Text = "";
+
+            
+            //mepr N if empty
+            
+            if (txtMEpr1.Text.Equals("")) { 
+                txtMEpr1.Text = "N";
+            }
+            if (txtMEpr2.Text.Equals("")) { 
+                txtMEpr2.Text = "N";
+            }
+            if (txtMEprWiSo.Text.Equals("")) { 
+                txtMEprWiSo.Text = "N";
+            }
+            
+            
+        }
         // 
         private void updatePartOne(object sender, EventArgs e)
         {
@@ -124,35 +269,97 @@ namespace Prüfungsberechner
                 txtNote1.Text = Convert.ToString(calculateNote(punkte1));
                 txtNote2.Text = Convert.ToString(calculateNote(punkte1));
 
+                updatePartTwo();
 
 
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Beim updaten von Part 1 der Tabelle ist ein Fehler aufgetreten. \n \n" + ex);
+                clearLabels();
+            }
+        }
+
+
+        private int calculateBereich(int points, System.Windows.Forms.TextBox txtMEpr, System.Windows.Forms.Label result1, System.Windows.Forms.Label result2, System.Windows.Forms.Label result3, System.Windows.Forms.Label totpoints, System.Windows.Forms.Label txtNote)
+        {
+            if (!txtMEpr.Text.Equals("") && !txtMEpr.Text.Equals("N"))
+            {
+                int mepr = Convert.ToInt32(txtMEpr.Text);
+                int total = points * 2 + mepr;
+                result1.Text = total.ToString();
+                int gerundet = Round(total / 3);
+                result2.Text = gerundet.ToString();
+            }
+            else
+            {
+                result1.Text = "";
+                result2.Text = points.ToString();
             }
 
-
-        
+            int ergebnis = Convert.ToInt32(result2.Text);
+            result3.Text = (ergebnis * 10).ToString();
+            totpoints.Text = ergebnis.ToString();
+            txtNote.Text = calculateNote(ergebnis).ToString();
+            return ergebnis;
         }
 
 
-        private bool checkIfNeededIsFilled()
+        private void updatePartTwo()
         {
-            bool needIsFilled = false;
+            try
+            {
+                if (!checkIfNeededIsFilled()) return;
 
-            // Checkt ob needed filled ist.
-            if (!txtPunkteTheorie1.Text.Equals("") && !txtPunkteTheorie2.Text.Equals("") && !txtPunkteWiSo.Text.Equals("") && !txtPunkteDoku.Text.Equals("") && !txtPunktePrFa.Text.Equals(""))
-            { needIsFilled = true; }
-            return needIsFilled;
+                clearLabels();
+
+                // Update Part One muss vor Finale Berechnung aufgerufen werden!
+                //updatePartOne
+
+
+                //Theorie + WiSo
+                calculateBereich(Convert.ToInt32(txtPunkteTheorie1.Text),txtMEpr1, result1Theorie1, result2Theorie1, result3Theorie1,totPunkteTheorie1, txtNoteTheorie1);
+
+                calculateBereich(Convert.ToInt32(txtPunkteTheorie2.Text),txtMEpr2, result1Theorie2, result2Theorie2, result3Theorie2,totPunkteTheorie2, txtNoteTheorie2);
+
+                calculateBereich(Convert.ToInt32(txtPunkteWiSo.Text),txtMEprWiSo, result1WiSo, result2WiSo, result3WiSo,totPunkteWiSo, txtNoteWiSo);
+
+                // Projekt 
+                int doku = Convert.ToInt32(txtPunkteDoku.Text) * 50;
+                int prfa = Convert.ToInt32(txtPunktePrFa.Text) * 50;
+                result1Doku.Text = doku.ToString();
+                result1PrFa.Text = prfa.ToString();
+                int sumProjekt = doku + prfa;
+                txtSumProjekt.Text = sumProjekt.ToString();
+                int projektGerundet = Round(sumProjekt / 100.0);
+                result2Projekt.Text = projektGerundet.ToString();
+                result3Projekt.Text = (projektGerundet * 50).ToString();
+                totPunkteProjekt.Text = projektGerundet.ToString();
+                txtNoteProjekt.Text = calculateNote(projektGerundet).ToString();
+
+                // Part2 total:
+                int sumPart2Int = Convert.ToInt32(result3Projekt.Text) + Convert.ToInt32(result3Theorie1.Text) + Convert.ToInt32(result3Theorie2.Text) + Convert.ToInt32(result3WiSo.Text);
+                result3Part2.Text = sumPart2Int.ToString();
+                int part2Punkte = Round(sumPart2Int / 80.0);
+                totPunktePart2.Text = part2Punkte.ToString();
+                txtNotePart2.Text = calculateNote(part2Punkte).ToString();
+
+                //Gesamtergebnis:
+                sumPart1.Text = lblErgebnis2.Text;
+                sumPart2.Text = sumPart2Int.ToString(); 
+                int total = Round((Convert.ToDouble(lblErgebnis2.Text) + sumPart2Int) / 100);
+                totalPunkteAll.Text = total.ToString();
+                txtNoteAll.Text = calculateNote(total).ToString();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Fehler in Part 2 der Berechnung: \n\n" + ex.Message);
+                clearLabels();
+
+            }
         }
 
-        private void clearLabels()
-        {
-
-        }
-
-
+        /*
         private void updatePartTwo() // kann nur ausgeführt bzw. wird nur bei vollständiger ausfüllung ausgeführt
         {
             // Nimmt Calculation vor.
@@ -162,6 +369,8 @@ namespace Prüfungsberechner
                 {
                     clearLabels();
 
+                    // Update Part One muss vor Finale Berechnung aufgerufen werden!
+                    //updatePartOne
                     
                     // THEORIE 1:
                     int punkteTheorie1 = Convert.ToInt32(txtPunkteTheorie1.Text);
@@ -273,10 +482,7 @@ namespace Prüfungsberechner
 
 
         }
-
-
-
-
+        */
 
 
 
@@ -285,10 +491,6 @@ namespace Prüfungsberechner
 
         // setter für die einzelnen Kategorien
         // -----------------------------------
-
-
-
-
         // THeorie 1:
         private void setInputPunkteTheorie1(object sender, EventArgs e)
         {
@@ -314,6 +516,11 @@ namespace Prüfungsberechner
                 int punkteMEpr1 = 0;
                 if (!Int32.TryParse(txtMEpr1.Text, out punkteMEpr1) && !txtMEpr1.Text.Equals(""))
                 {
+                    if (txtMEpr1.Text == "N")
+                    {
+                        updatePartTwo();
+                        return;
+                    }
                     throw new ArgumentException("Input not valid");
                 }
                 punkteMEpr1 = correctIfMoreThanHundred(punkteMEpr1, txtMEpr1);
@@ -353,6 +560,11 @@ namespace Prüfungsberechner
                 int punkteMEpr2 = 0;
                 if (!Int32.TryParse(txtMEpr2.Text, out punkteMEpr2) && !txtMEpr2.Text.Equals(""))
                 {
+                    if (txtMEpr2.Text == "N")
+                    {
+                        updatePartTwo();
+                        return;
+                    }
                     throw new ArgumentException("Input not valid");
                 }
                 punkteMEpr2 = correctIfMoreThanHundred(punkteMEpr2, txtMEpr2);
@@ -393,6 +605,11 @@ namespace Prüfungsberechner
                 int punkteMEprWiSo = 0;
                 if (!Int32.TryParse(txtMEprWiSo.Text, out punkteMEprWiSo) && !txtMEprWiSo.Text.Equals(""))
                 {
+                    if (txtMEprWiSo.Text == "N")
+                    {
+                        updatePartTwo();
+                        return;
+                    }
                     throw new ArgumentException("Input not valid");
                 }
                 punkteMEprWiSo = correctIfMoreThanHundred(punkteMEprWiSo, txtMEprWiSo);
@@ -452,6 +669,8 @@ namespace Prüfungsberechner
             labTheorie1.Text = "Konzeption und Administration von IT-Systemen";
             labTheorie2.Text = "Analyse und Entwicklung";
 
+
+            clearLabels();
             //updateTheoJob();
         }
 

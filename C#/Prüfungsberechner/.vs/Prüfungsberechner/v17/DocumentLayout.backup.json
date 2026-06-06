@@ -51,8 +51,7 @@
               "RelativeToolTip": "Pr\u00FCfungsberechner\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-04T11:51:54.805Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-04T11:51:54.805Z"
             },
             {
               "$type": "Document",
@@ -64,8 +63,7 @@
               "RelativeToolTip": "Pr\u00FCfungsberechner\\Form1.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-03T14:18:41.274Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-03T14:18:41.274Z"
             }
           ]
         }
@@ -77,10 +75,10 @@
       "FloatingWindowState": {
         "Id": "bf2c53b9-6168-487e-923d-0edce8513917",
         "Display": 0,
-        "X": 991,
-        "Y": 67,
-        "Width": 2099,
-        "Height": 1219,
+        "X": 612,
+        "Y": 47,
+        "Width": 2198,
+        "Height": 1256,
         "WindowState": 0
       },
       "DocumentGroups": [
@@ -96,7 +94,7 @@
               "RelativeDocumentMoniker": "Pr\u00FCfungsberechner\\Form1.cs",
               "ToolTip": "C:\\Users\\tlang\\projects\\bs_code\\C#\\Pr\u00FCfungsberechner\\Pr\u00FCfungsberechner\\Form1.cs",
               "RelativeToolTip": "Pr\u00FCfungsberechner\\Form1.cs",
-              "ViewState": "AgIAAEUBAAAAAAAAAAAUwFwBAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAJwBAAAAAAAAAAAIwDEBAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-06T10:35:13.821Z",
               "EditorCaption": ""

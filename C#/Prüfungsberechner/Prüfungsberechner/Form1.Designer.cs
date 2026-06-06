@@ -460,7 +460,6 @@
             this.label2.Size = new System.Drawing.Size(168, 20);
             this.label2.TabIndex = 0;
             this.label2.Text = "Ausbildungsbetrieb:";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // panel2
             // 
@@ -481,6 +480,7 @@
             this.txtStudentNumber.Name = "txtStudentNumber";
             this.txtStudentNumber.Size = new System.Drawing.Size(280, 20);
             this.txtStudentNumber.TabIndex = 1;
+            this.txtStudentNumber.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.onlyAcceptDigits);
             // 
             // label1
             // 
@@ -1528,7 +1528,7 @@
             this.txtPunktePrFa.Name = "txtPunktePrFa";
             this.txtPunktePrFa.Size = new System.Drawing.Size(62, 20);
             this.txtPunktePrFa.TabIndex = 0;
-            this.txtPunktePrFa.TextChanged += new System.EventHandler(this.setInputPunktePrFa);
+            this.txtPunktePrFa.TextChanged += new System.EventHandler(this.setInput);
             this.txtPunktePrFa.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.onlyAcceptDigits);
             // 
             // panel68
@@ -1663,7 +1663,7 @@
             this.txtMEprWiSo.Name = "txtMEprWiSo";
             this.txtMEprWiSo.Size = new System.Drawing.Size(62, 20);
             this.txtMEprWiSo.TabIndex = 0;
-            this.txtMEprWiSo.TextChanged += new System.EventHandler(this.setInputMEprWiSo);
+            this.txtMEprWiSo.TextChanged += new System.EventHandler(this.setInput);
             this.txtMEprWiSo.Enter += new System.EventHandler(this.enterMEprBox);
             this.txtMEprWiSo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.onlyAcceptDigits);
             this.txtMEprWiSo.Leave += new System.EventHandler(this.leaveMEprBox);
@@ -1704,7 +1704,7 @@
             this.txtPunkteWiSo.Name = "txtPunkteWiSo";
             this.txtPunkteWiSo.Size = new System.Drawing.Size(62, 20);
             this.txtPunkteWiSo.TabIndex = 0;
-            this.txtPunkteWiSo.TextChanged += new System.EventHandler(this.setInputPunkteWiSo);
+            this.txtPunkteWiSo.TextChanged += new System.EventHandler(this.setInput);
             this.txtPunkteWiSo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.onlyAcceptDigits);
             // 
             // panel54
@@ -1821,7 +1821,7 @@
             this.txtMEpr2.Name = "txtMEpr2";
             this.txtMEpr2.Size = new System.Drawing.Size(62, 20);
             this.txtMEpr2.TabIndex = 0;
-            this.txtMEpr2.TextChanged += new System.EventHandler(this.setInputMEpr2);
+            this.txtMEpr2.TextChanged += new System.EventHandler(this.setInput);
             this.txtMEpr2.Enter += new System.EventHandler(this.enterMEprBox);
             this.txtMEpr2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.onlyAcceptDigits);
             this.txtMEpr2.Leave += new System.EventHandler(this.leaveMEprBox);
@@ -2029,7 +2029,7 @@
             this.txtPunkteTheorie1.Name = "txtPunkteTheorie1";
             this.txtPunkteTheorie1.Size = new System.Drawing.Size(62, 20);
             this.txtPunkteTheorie1.TabIndex = 0;
-            this.txtPunkteTheorie1.TextChanged += new System.EventHandler(this.setInputPunkteTheorie1);
+            this.txtPunkteTheorie1.TextChanged += new System.EventHandler(this.setInput);
             this.txtPunkteTheorie1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.onlyAcceptDigits);
             // 
             // panel37
@@ -2048,7 +2048,7 @@
             this.txtMEpr1.Name = "txtMEpr1";
             this.txtMEpr1.Size = new System.Drawing.Size(62, 20);
             this.txtMEpr1.TabIndex = 0;
-            this.txtMEpr1.TextChanged += new System.EventHandler(this.setInputMEpr1);
+            this.txtMEpr1.TextChanged += new System.EventHandler(this.setInput);
             this.txtMEpr1.Enter += new System.EventHandler(this.enterMEprBox);
             this.txtMEpr1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.onlyAcceptDigits);
             this.txtMEpr1.Leave += new System.EventHandler(this.leaveMEprBox);
@@ -2160,13 +2160,13 @@
             this.panel30.Controls.Add(this.labTheorie2);
             this.panel30.Location = new System.Drawing.Point(3, 76);
             this.panel30.Name = "panel30";
-            this.panel30.Size = new System.Drawing.Size(58, 24);
+            this.panel30.Size = new System.Drawing.Size(61, 19);
             this.panel30.TabIndex = 24;
             // 
             // labTheorie2
             // 
             this.labTheorie2.AutoSize = true;
-            this.labTheorie2.Location = new System.Drawing.Point(3, 11);
+            this.labTheorie2.Location = new System.Drawing.Point(6, 6);
             this.labTheorie2.Name = "labTheorie2";
             this.labTheorie2.Size = new System.Drawing.Size(52, 13);
             this.labTheorie2.TabIndex = 8;
@@ -2188,7 +2188,7 @@
             this.txtPunkteTheorie2.Name = "txtPunkteTheorie2";
             this.txtPunkteTheorie2.Size = new System.Drawing.Size(62, 20);
             this.txtPunkteTheorie2.TabIndex = 0;
-            this.txtPunkteTheorie2.TextChanged += new System.EventHandler(this.setInputPunkteTheorie2);
+            this.txtPunkteTheorie2.TextChanged += new System.EventHandler(this.setInput);
             this.txtPunkteTheorie2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.onlyAcceptDigits);
             // 
             // panel47
@@ -2237,7 +2237,7 @@
             this.panel59.Controls.Add(this.label51);
             this.panel59.Location = new System.Drawing.Point(3, 114);
             this.panel59.Name = "panel59";
-            this.panel59.Size = new System.Drawing.Size(146, 24);
+            this.panel59.Size = new System.Drawing.Size(145, 18);
             this.panel59.TabIndex = 28;
             // 
             // panel71
@@ -2252,7 +2252,7 @@
             // label51
             // 
             this.label51.AutoSize = true;
-            this.label51.Location = new System.Drawing.Point(3, 11);
+            this.label51.Location = new System.Drawing.Point(2, 5);
             this.label51.Name = "label51";
             this.label51.Size = new System.Drawing.Size(140, 13);
             this.label51.TabIndex = 8;
@@ -2303,7 +2303,7 @@
             this.txtPunkteDoku.Name = "txtPunkteDoku";
             this.txtPunkteDoku.Size = new System.Drawing.Size(62, 20);
             this.txtPunkteDoku.TabIndex = 0;
-            this.txtPunkteDoku.TextChanged += new System.EventHandler(this.setInputPunkteDoku);
+            this.txtPunkteDoku.TextChanged += new System.EventHandler(this.setInput);
             this.txtPunkteDoku.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.onlyAcceptDigits);
             // 
             // panel75
@@ -2830,7 +2830,7 @@
             this.butReset.TabIndex = 24;
             this.butReset.Text = "Reset";
             this.butReset.UseVisualStyleBackColor = true;
-            this.butReset.Click += new System.EventHandler(this.startResetLayouts);
+            this.butReset.Click += new System.EventHandler(this.resetAll);
             // 
             // Prüfungsrechner
             // 

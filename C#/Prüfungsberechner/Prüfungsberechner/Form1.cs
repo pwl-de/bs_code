@@ -21,20 +21,6 @@ namespace Prüfungsberechner
             InitializeComponent();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox4_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
 
 
 
@@ -44,7 +30,7 @@ namespace Prüfungsberechner
 
 
 
-        // nur digits
+        // nur digits akzeptieren:
         private void onlyAcceptDigits(object sender, KeyPressEventArgs e)
         {
             //nur zahlen und backspace
@@ -75,7 +61,6 @@ namespace Prüfungsberechner
 
         private int calculateNote(int points)
         {
-            // punkte evtl auf die 100 Notenschlüsselbringen?
             if (points >= 92)
             {
                 return 1;
@@ -105,26 +90,26 @@ namespace Prüfungsberechner
 
         private bool checkIfNeededIsFilled()
         {
-            bool needIsFilled = false;
+            //bool needIsFilled = false;
 
             // Checkt ob needed filled ist.
             if (!txtPunkteTheorie1.Text.Equals("") && !txtPunkteTheorie2.Text.Equals("") && !txtPunkteWiSo.Text.Equals("") && !txtPunkteDoku.Text.Equals("") && !txtPunktePrFa.Text.Equals(""))
-            { needIsFilled = true; }
-            return needIsFilled;
+            { return true; }
+            return false;
         }
 
 
         private bool checkIfNeededIsFilledForTotalResult()
         {
-            bool needIsFilled = false;
+            //bool needIsFilled = false;
 
             // Checkt ob needed filled ist.
             if (!txtPunkteTheorie1.Text.Equals("") && !txtPunkteTheorie2.Text.Equals("") && !txtPunkteWiSo.Text.Equals("") && !txtPunkteDoku.Text.Equals("") && !txtPunktePrFa.Text.Equals("") && !txtPunkte1.Text.Equals(""))
-            { needIsFilled = true; }
-            return needIsFilled;
+            { return true; }
+            return false;
         }
 
-        private void resetAll()
+        private void resetAll(object sender, EventArgs e)
         {
 
             // Alle Inputs clearen:
@@ -335,8 +320,13 @@ namespace Prüfungsberechner
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Beim updaten von Part 1 der Tabelle ist ein Fehler aufgetreten. \n \n" + ex);
-                clearLabels();
+                MessageBox.Show("Beim updaten von Part 1 der Tabelle ist ein Fehler aufgetreten. \n \n" + ex.Message);
+                lblErgebnis1.Text = "";
+                lblErgebnis2.Text = "";
+                totPunkte1.Text = "";
+                totPunkte2.Text = "";
+                txtNote1.Text = "";
+                txtNote2.Text = "";
             }
         }
 
@@ -375,7 +365,6 @@ namespace Prüfungsberechner
 
 
 
-                //TODO Update Part One muss vor Finale Berechnung aufgerufen werden 
 
 
                 //Theorie + WiSo
@@ -406,13 +395,11 @@ namespace Prüfungsberechner
                 txtNotePart2.Text = calculateNote(part2Punkte).ToString();
 
                 updateGesamtResult();
-           
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Fehler in Part 2 der Berechnung: \n\n" + ex.Message);
                 clearLabels();
-
             }
         }
 
@@ -592,6 +579,35 @@ namespace Prüfungsberechner
         // setter für die einzelnen Kategorien
         // -----------------------------------
         // THeorie 1:
+
+        private void setInput(object sender, EventArgs e)
+        {
+            System.Windows.Forms.TextBox textBox = sender as System.Windows.Forms.TextBox;
+
+            try
+            {
+                int punkte = 0;
+                if (!Int32.TryParse(textBox.Text, out punkte) && !textBox.Text.Equals(""))
+                {
+                    if (textBox.Text == "N")
+                    {
+                        return;
+                    }
+                    throw new ArgumentException("Input not valid");
+                }
+                punkte = correctIfMoreThanHundred(punkte, textBox);
+                updatePartTwo();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ein Fehler ist aufgetreten \n \n" + ex.Message);
+            }
+        }
+
+
+        /*
+
+
         private void setInputPunkteTheorie1(object sender, EventArgs e)
         {
             try {
@@ -741,7 +757,7 @@ namespace Prüfungsberechner
                 MessageBox.Show("Ein Fehler ist aufgetreten \n \n" + ex);
             }
         }
-
+        
 
 
         private void setInputPunktePrFa(object sender, EventArgs e)
@@ -762,17 +778,15 @@ namespace Prüfungsberechner
                 MessageBox.Show("Ein Fehler ist aufgetreten \n \n" + ex);
             }
         }
+        */
 
         private void Prüfungsrechner_Load(object sender, EventArgs e)
         {
             selectJob.SelectedIndex = 0;
-            labTheorie1.Text = "Konzeption und Administration von IT-Systemen";
-            labTheorie2.Text = "Analyse und Entwicklung";
-
+            updateTheoJob(sender, e);
 
             clearLabels();
-            resetAll();
-            //updateTheoJob();
+            resetAll(sender, e);
         }
 
         private void updateTheoJob(object sender, EventArgs e)
@@ -831,10 +845,7 @@ namespace Prüfungsberechner
             }
         }
 
-        private void startResetLayouts(object sender, EventArgs e)
-        {
-            resetAll();
-        }
+
 
         private void enterMEprBox(object sender, EventArgs e)
         {

@@ -5,38 +5,27 @@
 
 
 
+private void setInput(object sender, EventArgs e) { 
+    System.Windows.Forms.TextBox textBox = sender as System.Windows.Forms.TextBox;
 
-
-
-
-                //Gesamtergebnis:
-                sumPart1.Text = lblErgebnis2.Text;
-                sumPart2.Text = sumPart2Int.ToString(); 
-                int total = Round((Convert.ToDouble(lblErgebnis2.Text) + sumPart2Int) / 100);
-                totalPunkteAll.Text = total.ToString();
-                txtNoteAll.Text = calculateNote(total).ToString();
-
-                //Passed or not passed?:
-                //Get Infos über den Schüler
-                string studentName = txtStudentName.Text;
-                string company = txtCompany.Text;
-                string studentNumber = txtStudentNumber.Text;
-                if (Convert.ToInt32(txtNoteAll.Text) <= 4)
-                {
-                    labPassed.Text = "Der Schüler " + studentName + " mit der Nummer " + studentNumber + "hat die Prüfung bestanden.";
-                } else
-                {
-                    labPassed.Text = "Der Schüler " + studentName + " mit der Nummer " + studentNumber + "hat die Prüfung nicht bestanden.";
-                }
-
-
-
-            if (txtMEpr1.Text.Equals("")) { 
-                txtMEpr1.Text = "N";
+    try
+    {
+        int punkte = 0;
+        if (!Int32.TryParse(textBox.Text, out punkte) && !textBox.Text.Equals(""))
+        {
+            if (textBox.Text == "N")
+            {
+                return;
             }
-            if (txtMEpr2.Text.Equals("")) { 
-                txtMEpr2.Text = "N";
-            }
-            if (txtMEprWiSo.Text.Equals("")) { 
-                txtMEprWiSo.Text = "N";
-            }
+            throw new ArgumentException("Input not valid");
+        }
+        punkte = correctIfMoreThanHundred(punkte, textBox);
+        updatePartTwo();
+    }
+    catch (Exception ex)
+    {
+        MessageBox.Show("Ein Fehler ist aufgetreten \n \n" + ex);
+    }
+}
+
+// --------------------------------------------------------------------
